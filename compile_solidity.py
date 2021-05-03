@@ -10,7 +10,7 @@ def deploy_contract(contract_interface):
         bytecode=contract_interface['bin']
     )
     # Get transaction hash from deployed contract
-    tx_hash =contract.deploy(transaction{'from':w3.eth.accounts[1]})
+    tx_hash = contract.deploy(transaction{'from':w3.eth.accounts[1]})
     # Get tx receipt to get contract address
     tx_receipt = w3.eth.getTransactionReceipt(tx_hash)
     return tx_receipt['contractAddress']

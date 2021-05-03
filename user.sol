@@ -1,4 +1,5 @@
 pragma solidity ^0.4.21;
+// pragma solidity >=0.4.22 <0.8.0;
 // import library file
 import "stringUtils.sol";
 contract userRecords {
