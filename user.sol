@@ -13,7 +13,7 @@ contract userRecords {
   // user object
   user user_obj;
   //Internal function to conver genderType enum from string
-  function getGenderFromString(string gender) internal returns   (genderType) {
+  function getGenderFromString(string gender) internal returns (genderType) {
     if(StringUtils.equal(gender, "male")) {
       return genderType.male;
     } else {
