@@ -1,10 +1,13 @@
-pragma solidity ^0.4.21;
-// pragma solidity >=0.4.22 <0.8.0;
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.4.22 <0.8.0;
+// pragma solidity ^0.4.21;
 // import library file
 import "stringUtils.sol";
+// import "github.com/ethereum/dapp-bin/blob/master/library/stringUtils.sol";
+
 contract userRecords {
   // enum type variable to store user gender
-  enum genderType { male, female };
+  enum genderType { male, female }
   // Actual user object which we will store
   struct user{
     string name;
